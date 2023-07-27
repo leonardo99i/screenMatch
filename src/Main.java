@@ -3,11 +3,10 @@ import br.com.alura.screenmatch.modelos.Filme;
 public class Main {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
-
-        meuFilme.nome = "O Poderoso Chefão";
-        meuFilme.anoLancamento = 1970;
-        meuFilme.duracaoMin = 180;
-        meuFilme.incluso = true;
+        meuFilme.setNome("O Poderoso Chefão");  
+        meuFilme.setAnoLancamento(1970);
+        meuFilme.setDuracaoMin(180);
+        meuFilme.setIncluso(true);
         meuFilme.avalia(8);
         meuFilme.avalia(5);
         meuFilme.avalia(10);
