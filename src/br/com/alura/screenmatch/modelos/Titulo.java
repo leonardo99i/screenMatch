@@ -1,12 +1,14 @@
 package br.com.alura.screenmatch.modelos;
 
 public class Titulo {
+
     // Declaração
     private String nome;
     private int anoLancamento;
     private boolean incluso;
     private double somaAvaliacao;
     private int totalAvaliacao;
+    private int duracaoMin;
 
     // getters e setters
     public String getNome() {
@@ -53,8 +55,6 @@ public class Titulo {
         this.duracaoMin = duracaoMin;
     }
 
-    private int duracaoMin;
-
     int gettotalAvaliacao() {
         return totalAvaliacao;
     }
@@ -63,13 +63,26 @@ public class Titulo {
     public void exibeFilme() {
         System.out.println("Nome: " + getNome());
         System.out.println("Lançamento: " + getAnoLancamento());
-
+        System.out.println("Tempo de Duração: " + getDuracaoMin());
         if (isIncluso() == true) {
             System.out.println("Incluso: Sim");
         } else {
             System.out.println("Incluso: Não");
         }
 
+        System.out.println("Total de Avaliações: " + gettotalAvaliacao());
+        System.out.println("Média das Avaliação: " + mediaAvaliacoes());
+    }
+
+    public void exibeSerie() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Lançamento: " + getAnoLancamento());
+        //System.out.println("Temporadas: " + Serie.getTemporadas());
+        if (isIncluso() == true) {
+            System.out.println("Incluso: Sim");
+        } else {
+            System.out.println("Incluso: Não");
+        }
         System.out.println("Total de Avaliações: " + gettotalAvaliacao());
         System.out.println("Média das Avaliação: " + mediaAvaliacoes());
         System.out.println("Tempo de Duração: " + getDuracaoMin());
