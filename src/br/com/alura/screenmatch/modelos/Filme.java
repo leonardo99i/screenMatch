@@ -1,11 +1,13 @@
 package br.com.alura.screenmatch.modelos;
 public class Filme {
+    //Declaração
     private String nome;
     private int anoLancamento;
     private boolean incluso;
     private double somaAvaliacao;
     private int totalAvaliacao;
 
+    //getters e setters
     public String getNome() {
         return nome;
     }
@@ -56,6 +58,7 @@ public class Filme {
        return totalAvaliacao;
     }
 
+    //Exibe a ficha do Filme
     public void exibeFilme(){
         System.out.println("Nome: " + getNome());
         System.out.println("Lançamento: " + getAnoLancamento());
@@ -71,11 +74,13 @@ public class Filme {
         System.out.println("Tempo de Duração: " + getDuracaoMin());
     }
 
+    //Metodo para avaliação
     public void avalia(double nota){
         somaAvaliacao += nota;
         totalAvaliacao++;
     }
 
+    //Metodo que calcula as médias de avaliação
     public double mediaAvaliacoes(){
         return somaAvaliacao / totalAvaliacao;
     }
