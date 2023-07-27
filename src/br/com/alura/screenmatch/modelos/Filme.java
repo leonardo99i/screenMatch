@@ -31,7 +31,7 @@ public class Filme {
         totalAvaliacao++;
     }
 
-    double mediaAvaliacoes(){
+    public double mediaAvaliacoes(){
         return somaAvaliacao / totalAvaliacao;
     }
 }
