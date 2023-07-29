@@ -1,5 +1,6 @@
 import br.com.alura.screenmatch.calculos.Recomendacao;
 import br.com.alura.screenmatch.calculos.calculadoraDeTempo;
+import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -62,5 +63,11 @@ public class Main {
         Recomendacao filtro = new Recomendacao();
 
         filtro.filtra(meuFilme);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(2);
+        episodio.setSerie(umaSerie);
+        episodio.setTotalVisualizacao(5000);
+        filtro.filtra(episodio);
     }
 }
