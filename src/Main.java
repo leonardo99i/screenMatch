@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculos.Recomendacao;
 import br.com.alura.screenmatch.calculos.calculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
@@ -57,5 +58,9 @@ public class Main {
         calculadora.inclui(outroFilme);
         calculadora.inclui(umaSerie);
         System.out.println("Tempo Total para Maratonar: " + calculadora.getTempoTotal());
+        System.out.println("");
+        Recomendacao filtro = new Recomendacao();
+
+        filtro.filtra(meuFilme);
     }
 }
