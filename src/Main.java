@@ -96,5 +96,6 @@ public class Main {
         listaFilmes.add(meuFilme);
         System.out.println("Tamanho do ArrayList: " + listaFilmes.size());
         System.out.println("Primeiro filme: " + listaFilmes.get(0).getNome());
+        System.out.println(listaFilmes );
     }
 }

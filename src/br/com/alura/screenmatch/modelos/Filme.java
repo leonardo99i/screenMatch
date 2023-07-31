@@ -18,5 +18,8 @@ public class Filme extends Titulo implements Classificar{
         return (int) gettotalAvaliacao() / 2;
     }
 
-    
+    @Override
+    public String toString(){
+        return "Filme: " + this.getNome() + "(" + this.getAnoLancamento() + ")";
+    }
 }
