@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import br.com.alura.screenmatch.calculos.Recomendacao;
 import br.com.alura.screenmatch.calculos.calculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Episodio;
@@ -69,5 +71,30 @@ public class Main {
         episodio.setSerie(umaSerie);
         episodio.setTotalVisualizacao(5000);
         filtro.filtra(episodio);
+
+        var filmeNovo = new Filme();
+        filmeNovo.setNome("Forrest Gump");
+        filmeNovo.setAnoLancamento(1994);
+        filmeNovo.setDuracaoMin(145);
+        filmeNovo.setIncluso(true);
+        filmeNovo.avalia(10);
+        filmeNovo.avalia(10);
+        filmeNovo.avalia(10);
+        filmeNovo.avalia(10);
+        filmeNovo.avalia(10);
+        filmeNovo.avalia(10);
+        filmeNovo.avalia(10);
+        filmeNovo.avalia(10);
+        filmeNovo.avalia(10);
+        filmeNovo.setDiretor("Robert Zemeckis");
+        filmeNovo.exibeFilme();
+        System.out.println("---------------------------------------------------");
+
+        ArrayList<Filme> listaFilmes = new ArrayList<>();
+        listaFilmes.add(filmeNovo);
+        listaFilmes.add(outroFilme);
+        listaFilmes.add(meuFilme);
+        System.out.println("Tamanho do ArrayList: " + listaFilmes.size());
+        System.out.println("Primeiro filme: " + listaFilmes.get(0).getNome());
     }
 }
